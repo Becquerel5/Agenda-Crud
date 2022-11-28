@@ -1,0 +1,8 @@
+1) pour lancer le front end
+	npm install
+	npm serve
+2) pour lancer le back-end
+	mvn spring-boot:run
+	ou lancer via un editeur (IntelliJ,SpringtoolSuite,Eclipse ..)
+
+3)pas be soin d'intaller un SGBD (sa utilise la H2 de sprinboot comme BD memoire)
