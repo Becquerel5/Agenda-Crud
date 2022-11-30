@@ -85,7 +85,7 @@ const Create = props =>  {
     return ( 
         <div className="list-group container">
             <div className="App">
-                {!editing && <h1>Create An Agenda</h1> || <h1>Modify Your Agenda</h1>}
+                {!editing && <h1>Create An Event</h1> || <h1>Modify Your Event</h1>}
                
       
                 <form className="row g-3 needs-validation"  onSubmit={handleSubmit}>

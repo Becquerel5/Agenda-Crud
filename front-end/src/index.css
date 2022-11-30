@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import './App.css';
+@import '~react-agenda/build/styles.css';
+@import '~react-datetime/css/react-datetime.css';
+

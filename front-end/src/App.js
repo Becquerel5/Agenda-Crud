@@ -17,6 +17,7 @@ import HomePage from './Page/HomePage';
 import Create from './Page/Create';
 
 import Dashboard from './components/Dashboard';
+import Agendaf from './Page/Agendaf';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Route exact path="/" element={<HomePage/>} />
           <Route exact path="/agenda" element={<HomePage/>} />
           <Route exact path="/create" element={<Create/>} />
+          <Route exact path="/agendar" element={<Agendaf/>} />
           {/* <Route exact path="/agenda/:id" element={<Create/>} /> */}
           <Route path="/agenda/:id" element={<Create/>} />
         </Routes>

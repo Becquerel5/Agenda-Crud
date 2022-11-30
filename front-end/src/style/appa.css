@@ -1,41 +1,9 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@import '~react-agenda/build/styles.css';
+@import '~react-datetime/css/react-datetime.css';
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 
@@ -45,7 +13,7 @@
 }
 
 
-
+/* 
 
 .zoom-plus-icon{
   background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTI2IDE0aC00djhoLTh2NGg4djhoNHYtOGg4di00aC04di04em0tMi0xMGMtMTEuMDMgMC0yMCA4Ljk3LTIwIDIwczguOTcgMjAgMjAgMjAgMjAtOC45NyAyMC0yMC04Ljk3LTIwLTIwLTIwem0wIDM2Yy04LjgyIDAtMTYtNy4xOC0xNi0xNnM3LjE4LTE2IDE2LTE2IDE2IDcuMTggMTYgMTYtNy4xOCAxNi0xNiAxNnoiLz48cGF0aCBkPSJNMCAwaDQ4djQ4aC00OHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=)no-repeat ;
@@ -68,7 +36,7 @@ background-size: cover;
 width: 20px;
 height: 20px;
 background-size: cover;
-}
+} */
 
 .button-control{
     display: -ms-flexbox;

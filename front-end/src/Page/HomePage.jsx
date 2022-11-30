@@ -1,8 +1,10 @@
 import axios from 'axios';
+import '../style/appa.css';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link, useParams , useNavigate} from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
+import moment from 'moment';
 
 import Pagination from '../components/Pagination';
 import AgendaApis from '../services/AgendaApis';
@@ -151,27 +153,21 @@ function HomePage(){
 
 const paginatedCustomers = Pagination.getData(filteredAgenda,currentPage,itemsPerPage);
 
-
-
-
-
-
-
-
-
-
-
-    
+const formateDate = (str)=> moment(str).format('LLLL');
     return ( 
         <div className="list-group ">
-            <div className="App">
+            <div className="App ">
                 {/* <Header/> */}
 
                 <div className=''>
                     <nav className="navbar navbar-expand-lg navbar-light bg-light">
                         <div className="container-fluid">
                             <a className="navbar-brand" href="#">
-                                <Link to={"/create"} className="btn btn-sm btn-primary">Create Agenda</Link>
+                                <Link to={"/create"} className="btn btn-sm btn-primary">Create Event</Link>
+                            </a>
+
+                            <a className="navbar-brand" href="#">
+                                <Link to={"/agendar"} className="btn btn-sm btn-secondary">Create Agenda</Link>
                             </a>
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>
@@ -179,7 +175,7 @@ const paginatedCustomers = Pagination.getData(filteredAgenda,currentPage,itemsPe
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li className="nav-item">
-                                        <a className="nav-link active" onClick={handleExport} aria-current="page" href="#">Export CSV</a>
+                                        <a className="nav-link active" onClick={handleExport} aria-current="page" href="#">Export Event xlsx</a>
                                     </li>                        
                                     <li className="nav-item">
                                         <input type="file" name="file" className="custom-file-input" id="inputGroupFile" required onChange={handleImport}
@@ -221,8 +217,8 @@ const paginatedCustomers = Pagination.getData(filteredAgenda,currentPage,itemsPe
                                     <td>{agenda.objectives}</td>
                                     <td>{agenda.namesparticipant}</td>
                                     <td>{agenda.location}</td>
-                                    <td>{agenda.datestart}</td>
-                                    <td>{agenda.dateend}</td>
+                                    <td>{formateDate(agenda.datestart)}</td>
+                                    <td>{formateDate(agenda.dateend)}</td>
                                     <td>
                                     
                                     <button
@@ -263,6 +259,11 @@ const paginatedCustomers = Pagination.getData(filteredAgenda,currentPage,itemsPe
                 </div>
 
                 <ToastContainer position={toast.POSITION.TOP_RIGHT}/>
+            </div>
+
+            <div className="">
+                                        <h1>Clock comming</h1>
+                                        {/* <HomePage/> */}
             </div>
 
 
